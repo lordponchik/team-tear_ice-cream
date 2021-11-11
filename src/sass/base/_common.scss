@@ -1,0 +1,21 @@
+body {
+  background-color: $white-color;
+  color: $primary-text-color;
+  // font-family: 'Roboto', sans-serif;
+  // font-size: 14px;
+  // line-height: 1.7;
+  // letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
