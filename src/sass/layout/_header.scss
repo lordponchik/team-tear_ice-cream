@@ -1,33 +1,106 @@
 .page-header {
+  padding-top: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
 }
-.container {
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .logo__link {
+  vertical-align: middle;
 }
-.logo__img {
-}
+
 .page-nav {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
+
 .page-nav__list {
+  display: flex;
+  list-style: none;
 }
+
 .page-nav__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
+
 .page-nav__link {
-}
-.visually-hidden {
-}
-.button__buy {
+  color: $white-color;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3125;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
+
 .button__burger {
+  padding-left: 0px;
+  padding-right: 0px;
+  vertical-align: middle;
+  margin-left: auto;
+  background: transparent;
+  stroke: $accent-color;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:focus {
+    stroke: $white-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
+
 .button__buy {
+  display: none;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-right: 37px;
+    padding-left: 37px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 22px;
+
+    stroke: $accent-color;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.button__svg {
+
+.button__text--mr {
+  margin-right: 12px;
 }
-.button--white {
+
+.icon-menu {
+  width: 20px;
+  height: 20px;
 }
-.button__text {
+
+.icon-more-sign {
+  width: 8px;
+  height: 8px;
 }
