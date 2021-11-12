@@ -4,6 +4,8 @@
 }
 .btn-close {
   margin-left: auto;
+  margin-right: 28px;
+  margin-bottom: 23px;
   display: block;
 }
 
@@ -27,6 +29,7 @@
   background-color: $menu-bg-color;
   width: 100vw;
   height: 100vh;
+  padding-top: 23px;
 }
 .site-nav__list {
   border-top: 1px solid #e18298;
@@ -37,7 +40,7 @@
   font-size: 14px;
   line-height: 18px;
   display: block;
-  padding: 20px 11px;
+  padding: 11px 20px;
 
   color: $white-color;
   &--active {
