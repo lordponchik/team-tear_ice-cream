@@ -1,6 +1,10 @@
 .menu {
+  transform: translateX(-200%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   background-color: $menu-bg-color;
-  margin-left: auto;
+  // margin-left: auto;
   height: 100vh;
   padding-top: 23px;
 
@@ -16,6 +20,13 @@
     pointer-events: none;
   }
 }
+.btn-menu.is-open ~ .menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  transform: translateX(0);
+}
+
 .btn-close {
   margin-left: auto;
   margin-right: 28px;
