@@ -1,12 +1,13 @@
 .menu {
-  transform: translateX(-200%);
+  transform: translateX(100%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   background-color: $menu-bg-color;
-  // margin-left: auto;
+  margin-left: auto;
   height: 100vh;
   padding-top: 23px;
+  transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   @media screen and (max-width: 767px) {
     width: 250px;
@@ -26,7 +27,9 @@
   pointer-events: visible;
   transform: translateX(0);
 }
-
+.menu.is-open .btn-menu {
+  display: none;
+}
 .btn-close {
   margin-left: auto;
   margin-right: 28px;
