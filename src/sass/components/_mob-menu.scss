@@ -1,0 +1,46 @@
+.btn {
+  background: none;
+  border-style: none;
+}
+.btn-close {
+  margin-left: auto;
+  display: block;
+}
+
+.btn-buy {
+  width: 209px;
+  height: 44px;
+  background-color: $white-color;
+  font-weight: 700;
+  color: $accent-color;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19px;
+}
+.menu {
+  background-color: $menu-bg-color;
+  width: 100vw;
+  height: 100vh;
+}
+.site-nav__list {
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+}
+.site-nav__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  padding: 20px 11px;
+
+  color: $white-color;
+  &--active {
+    color: $accent-color;
+  }
+}
