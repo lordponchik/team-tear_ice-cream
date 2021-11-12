@@ -7,6 +7,12 @@
   margin-right: 28px;
   margin-bottom: 23px;
   display: block;
+  cursor: pointer;
+
+  &:hover .btn-close__icon,
+  &:focus .btn-close__icon {
+    fill: $accent-color;
+  }
 }
 
 .btn-buy {
@@ -27,9 +33,21 @@
 }
 .menu {
   background-color: $menu-bg-color;
-  width: 100vw;
+  margin-left: auto;
   height: 100vh;
   padding-top: 23px;
+
+  @media screen and (max-width: 767px) {
+    width: 250px;
+  }
+  @media screen and (max-width: 1279px) {
+    width: 254px;
+  }
+  @media screen and (min-width: 1280px) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .site-nav__list {
   border-top: 1px solid #e18298;
@@ -43,7 +61,17 @@
   padding: 11px 20px;
 
   color: $white-color;
+  transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
   &--active {
     color: $accent-color;
   }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.button__text {
+  margin-top: -3px;
+  margin-right: 28px;
 }
