@@ -9,7 +9,6 @@
 @import './utils/vars';
 
 @import './base/common';
-@import './base/button';
 
 @import './layout/header';
 @import './layout/hero';
@@ -20,3 +19,5 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+
+@import './components/button';
