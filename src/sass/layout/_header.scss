@@ -1,4 +1,8 @@
 .page-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
   padding-top: 6px;
 
   @media screen and (min-width: 768px) {
