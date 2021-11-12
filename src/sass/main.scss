@@ -10,6 +10,8 @@
 
 @import './base/common';
 
+@import './components/button';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
@@ -19,5 +21,3 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
-
-@import './components/button';
