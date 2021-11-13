@@ -19,18 +19,6 @@
     grid-template-rows: repeat(3, 138px);
   }
 }
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(11, 86px);
-    grid-template-rows: repeat(3, 86px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .grid {
-    grid-template-columns: repeat(11, 138px);
-    grid-template-rows: repeat(3, 138px);
-  }
-}
 
 .grid__item {
   position: relative;
