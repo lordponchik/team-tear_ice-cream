@@ -21,10 +21,16 @@
 }
 
 .grid__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   border-radius: 8px;
 
   cursor: pointer;
+  -webkit-box-shadow: 0px -6px 5px -5px rgba(46, 27, 97, 0.9);
+  -moz-box-shadow: 0px -6px 5px -5px rgba(46, 27, 97, 0.9);
+  box-shadow: 0px -6px 5px -5px rgba(46, 27, 97, 0.9);
 
   animation: opacityGallery 7s both cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
   transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -139,4 +145,8 @@
   left: -2px;
   background-color: dimgrey;
   animation-delay: 4.5s;
+}
+.gallery__icon {
+  width: 80%;
+  height: 80%;
 }
