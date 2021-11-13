@@ -1,0 +1,144 @@
+.contacts__container {
+  @media screen and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.contacts {
+  padding-top: 43px;
+  padding-bottom: 57px;
+  background-image: linear-gradient(to bottom, $white-color 8%, $bg-color 8%, $bg-color 100%);
+
+  &__list {
+    margin-bottom: 54px;
+  }
+
+  &__item {
+    padding: 43px 20px;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
+    }
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 1.86;
+    font-weight: 500px;
+    color: $white-color;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 25px;
+    padding: 3px 25px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    background-color: $accent-peach-color;
+  }
+
+  &__title--mint {
+    background-color: $accent-mint-color;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    line-height: 1.86;
+    font-weight: 500px;
+    color: $primary-text-color;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500px;
+    color: $secondary-text-color;
+
+    margin-bottom: 25px;
+  }
+
+  &__days {
+    padding: 25px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  &__workdays {
+    font-size: 12px;
+    line-height: 1.86;
+    font-weight: 500px;
+    color: $primary-text-color;
+    letter-spacing: 0.04em;
+  }
+
+  &__time {
+    font-size: 12px;
+    line-height: 1.86;
+    font-weight: 500px;
+    color: #ffa5ba;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500px;
+    color: $secondary-text-color;
+
+    display: block;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.contacts__connection {
+  padding-top: 25px;
+}
+
+.contacts__communication {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__button-wrap {
+  text-align: center;
+}
+
+.button__location {
+  display: block;
+  margin: 0 auto;
+  padding: 13px 17px;
+  min-width: 161px;
+  margin-bottom: 10px;
+  &--white {
+    font-size: 16px;
+    line-height: 1.31;
+    font-weight: 700px;
+    color: $white-color;
+  }
+}
+
+.button__franchise {
+  display: block;
+  margin: 0 auto;
+  min-width: 161px;
+  padding: 13px 17px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
