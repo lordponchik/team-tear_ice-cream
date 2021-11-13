@@ -3,7 +3,7 @@
   padding-bottom: 39px;
   background: $bg-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 130px;
     padding-bottom: 66px;
   }
@@ -15,6 +15,13 @@
     background-size: contain;
     background-position-y: 88%;
   }
+
+  // @media screen and (min-width: 1280px) {
+  //   background-image: url(../images/about/---/bg-about.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   background-position-y: 88%;
+  // }
 }
 .about__label {
   margin-bottom: 15px;
@@ -28,6 +35,12 @@
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
   }
 }
 .about__title {
@@ -44,27 +57,35 @@
     font-size: 48px;
     margin-bottom: 50px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
 .about__container {
   @media screen and (min-width: 768px) {
-    display: inline-flex;
+    display: flex;
   }
 }
-.aa {
-  display: inline-block;
-  width: 340px;
-  height: 339px;
-}
 .about__img {
-  margin: 0 auto;
-  margin-bottom: 46px;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 46px;
+  }
 }
 .about__description {
   padding: 0 30px;
 
   @media screen and (min-width: 768px) {
     padding: 0;
-    padding-left: 17px;
+    margin-left: 17px;
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 74px;
+    width: 463px;
   }
 }
 .about__text {
@@ -76,9 +97,19 @@
     font-size: 14px;
     line-height: 1.8;
   }
+
+  @media screen and (min-width: 1280px) {
+    letter-spacing: 0.04em;
+  }
 }
 .about__text:first-child {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+  }
 }
 .about__text:nth-child(1n + 2) {
   color: $secondary-text-color;
@@ -86,15 +117,28 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.9;
+  }
 }
 .about__text:nth-child(2) {
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 30px;
+  }
 }
 .about__text:nth-child(3) {
   margin-bottom: 17px;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
   }
 }
 .about__btn {
@@ -107,6 +151,9 @@
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 }
 .about__btn-text {
