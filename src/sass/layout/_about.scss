@@ -2,6 +2,11 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background: $bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
 }
 .about__bg-milk {
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -20,6 +25,10 @@
   text-transform: uppercase;
   //   цвета нет
   color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
 }
 .about__title {
   margin-bottom: 26px;
@@ -30,9 +39,21 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
 }
 .about__container {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
+}
+.aa {
+  display: inline-block;
+  width: 340px;
+  height: 339px;
 }
 .about__img {
   margin: 0 auto;
@@ -40,23 +61,41 @@
 }
 .about__description {
   padding: 0 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    padding-left: 17px;
+  }
 }
 .about__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.8;
+  }
 }
 .about__text:first-child {
   margin-bottom: 30px;
 }
 .about__text:nth-child(1n + 2) {
   color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 .about__text:nth-child(2) {
   margin-bottom: 10px;
 }
 .about__text:nth-child(3) {
   margin-bottom: 17px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
 }
 .about__btn {
   width: 176px;
@@ -65,6 +104,10 @@
   font-size: 14px;
   line-height: 1.3;
   border-radius: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 .about__btn-text {
   margin-top: -3px;
