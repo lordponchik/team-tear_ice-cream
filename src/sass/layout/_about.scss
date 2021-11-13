@@ -4,16 +4,11 @@
   background: $bg-color;
 }
 .about__bg-milk {
-  background-image: url(../images/about/mob/bg-about.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 745px;
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: url(../images/about/mob/bg-about.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 577px;
+    background-position-y: 88%;
   }
 }
 .about__label {
@@ -36,7 +31,7 @@
   text-transform: uppercase;
   color: $accent-color;
 }
-.about__container{
+.about__container {
   // display: flex;
 }
 .about__img {
