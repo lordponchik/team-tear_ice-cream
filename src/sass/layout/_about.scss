@@ -29,14 +29,14 @@
 }
 
 .about__container-1 {
+  // padding 30 ибо 50 - 20 от контейнера
+  padding: 0 30px;
 }
 // через :first-child и :last-child не работает
 .about__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
-  // padding 30 ибо 50 - 20 от контейнера
-  padding: 0 30px;
 }
 .about__text-1 {
   margin-top: 46px;
@@ -51,7 +51,6 @@
   margin-top: 10px;
 }
 .about__btn {
-  margin-left: 30px;
   margin-top: 17px;
   width: 176px;
   height: 44px;
