@@ -1,9 +1,33 @@
-.about-section {
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.about {
   padding-top: 125px;
   padding-bottom: 39px;
   background: $bg-color;
 }
-.about__title__label {
+.about__container {
+  // display: flex;
+}
+
+.about__label {
   margin-bottom: 15px;
   font-family: Titan One;
   font-size: 18px;
@@ -23,46 +47,62 @@
   text-transform: uppercase;
   color: $accent-color;
 }
-.about__cow {
-  width: 280px;
-  height: 279px;
 
-  background-color: #ffa5ba;
+.about__container-1 {
+}
+// через :first-child и :last-child не работает
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  // padding 30 ибо 50 - 20 от контейнера
+  padding: 0 30px;
 }
 .about__text-1 {
   margin-top: 46px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
 }
 .about__text-2 {
-  margin-top: 47px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
+  margin-top: 30px;
   color: $secondary-text-color;
-//   background-image: url(./images/about/bg-about.png);
+}
+
+.about__text-3 {
+  display: block;
+  margin-top: 10px;
 }
 .about__btn {
-    // мне флекс здесь не нужен 
   position: relative;
+  // мне флекс здесь не нужен
   display: inline-block;
   padding: 13px 56px 13px 37px;
-  margin-top: 47px;
+  margin-top: 17px;
   width: 176px;
   height: 44px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.3;
   color: $accent-color;
-  background: #ffffff;
+  background: $white-color;
   border-radius: 22px;
   margin-left: 50px;
   border: 0;
 }
-.icon-about__btn {
+.about__icon-btn {
   position: absolute;
   top: 19px;
   right: 38px;
-  stroke: antiquewhite;
+}
+
+.aa {
+  background-image: url(../images/about/mob/bg-about.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 745px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    background-image: url(../images/about/mob/bg-about.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 577px;
+  }
 }
