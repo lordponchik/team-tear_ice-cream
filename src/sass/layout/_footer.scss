@@ -6,10 +6,10 @@ footer {
   padding-right: 20px;
 }
 
-// .footer__text {
-//   display: flex;
-//   //   flex-direction: column;
-// }
+.footer__text {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer__text--top {
   font-family: Titan One, sans-serif;
@@ -19,8 +19,6 @@ footer {
   font-size: 18px;
   line-height: 1.17px;
   text-transform: uppercase;
-  width: 232px;
-  height: 100%;
 }
 
 .footer__text--red {
@@ -32,8 +30,6 @@ footer {
   line-height: 1.15px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  width: 200px;
-  height: 100%;
 }
 
 .footer__list {
