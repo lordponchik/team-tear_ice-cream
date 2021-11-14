@@ -1,1 +1,89 @@
+.reviews.container {
+  padding-top: 80px;
+}
+.reviews__image {
+  margin: 0 auto 29px;
+}
 
+.reviews__quotes {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 44px 50px 25px;
+  background-color: #fafafa;
+  z-index: 0;
+}
+
+.reviews__quotes::before {
+  content: '';
+  display: block;
+  top: 28px;
+  left: 61px;
+  background-image: url(../images/reviews/quotes.png);
+  background-size: cover;
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  z-index: -1;
+}
+
+.reviews__text {
+  display: block;
+  width: 157px;
+  margin: 0 auto;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.reviews__gradient {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 70%;
+  background-image: repeating-linear-gradient(#e1e1e1 1px, transparent 3px, transparent 31px);
+}
+
+.reviews__person--info {
+  position: relative;
+  padding: 25px 0;
+  width: 172px;
+  margin: 0 auto;
+}
+.reviews__decorations {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.circle:not(:last-child) {
+  margin-right: 10px;
+}
+.circle::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #c7133e;
+}
+.reviews__person--text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  text-align: center;
+
+  color: #000000;
+}
