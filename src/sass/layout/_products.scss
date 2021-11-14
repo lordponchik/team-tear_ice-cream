@@ -319,12 +319,21 @@
   width: 40px;
   height: 40px;
   border: none;
-  background-color: white;
+  background-color: $white-color;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30px auto 0 auto;
+  color: $accent-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+    color: $white-color;
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: 40px;
@@ -336,5 +345,5 @@
 }
 
 .products__icon {
-  fill: $accent-color;
+  fill: currentColor;
 }
