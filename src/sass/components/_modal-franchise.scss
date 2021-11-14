@@ -158,14 +158,14 @@
   color: #d41443;
 
   & span {
-    width: 15px;
-    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
     border: 2px solid #ffa5ba;
     border-radius: 3px;
     margin-right: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
 
   &__input:checked + span {
