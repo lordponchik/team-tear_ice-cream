@@ -14,14 +14,22 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 88%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/mob/bg-about@2x.png);
+    }
   }
 
-  // @media screen and (min-width: 1280px) {
-  //   background-image: url(../images/about/---/bg-about.png);
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   background-position-y: 88%;
-  // }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/desktop/bg-about-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 88%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/desktop/bg-about-desktop@2x.png);
+    }
+  }
 }
 .about__label {
   margin-bottom: 15px;
@@ -151,9 +159,6 @@
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
   }
 }
 .about__btn-text {
