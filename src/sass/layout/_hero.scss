@@ -241,6 +241,7 @@
 }
 
 .hero-milk {
+  display: none;
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 245px;
@@ -254,7 +255,6 @@
 }
 
 .hero-milk__image {
-  display: none;
   @media screen and (min-width: 768px) {
     width: 124px;
     height: 126px;
@@ -272,7 +272,6 @@
 }
 
 .hero-milk__text {
-  display: none;
   @media screen and (min-width: 768px) {
     font-weight: normal;
     color: $white-color;
@@ -302,9 +301,6 @@
   &:hover {
     background-color: $accent-color;
     color: $white-color;
-  }
-  @media screen and (min-width: 320px) {
-    display: none;
   }
   @media screen and (min-width: 768px) {
     width: 18px;
