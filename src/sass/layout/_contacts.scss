@@ -3,6 +3,19 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/contacts/contacts-bg-desktop.png);
+    background-position: 50% 33%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/contacts-bg-desktop@2x.png);
+    }
+  }
 }
 
 .contacts {
@@ -13,13 +26,13 @@
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, $white-color 16%, $bg-color 16%, $bg-color 100%);
+    background-image: linear-gradient(to bottom, $white-color 17%, $bg-color 17%, $bg-color 100%);
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, $white-color 25%, $bg-color 25%, $bg-color 100%);
+    background-image: linear-gradient(to bottom, $white-color 18%, $bg-color 18%, $bg-color 100%);
   }
 
   &__list {
