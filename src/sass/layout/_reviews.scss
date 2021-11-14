@@ -26,7 +26,7 @@
   height: 40px;
   z-index: -1;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/quotes.png@2x.png);
+    background-image: url(../images/reviews/quotes@2x.png);
   }
 }
 .reviews__text {
@@ -113,6 +113,8 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  padding-right: 30px;
+  margin-right: 0 !important;
 }
 .swiper-slide:last-child {
   margin-bottom: 30px;
