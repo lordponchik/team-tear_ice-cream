@@ -11,7 +11,6 @@ footer {
   flex-direction: column;
 
   width: 234px;
-  height: 100%;
   @media screen and (min-width: 768px) {
     width: 340px;
     @media screen and (min-width: 1280px) {
@@ -79,8 +78,8 @@ footer {
   &:not(:last-child) {
     margin-right: 28px;
     @media screen and (min-width: 768px) {
-      width: 34px;
-      height: 34px;
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -135,7 +134,7 @@ footer {
     }
   }
 }
-.footer__bottom {
+.footer__copy {
   border-top: 1px solid #e1e1e1;
   width: 100%;
 
@@ -148,7 +147,7 @@ footer {
     }
   }
 }
-.footer__bottom-text {
+.footer__copyrigh {
   font-family: DM Sans;
   color: #907e82;
   font-style: normal;
