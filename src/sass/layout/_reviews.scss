@@ -25,8 +25,10 @@
   width: 54px;
   height: 40px;
   z-index: -1;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/reviews/quotes.png@2x.png);
+  }
 }
-
 .reviews__text {
   display: block;
   width: 157px;
