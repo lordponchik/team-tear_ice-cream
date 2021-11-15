@@ -2,6 +2,12 @@
   padding-top: 80px;
   margin-bottom: 86px;
 }
+.reviews .container {
+  @media screen and (min-width: 768px) {
+    padding: 0 74px;
+  }
+}
+
 .reviews__image {
   margin: 0 auto 29px;
 }
@@ -12,6 +18,10 @@
   padding: 44px 50px 25px;
   background-color: #fafafa;
   z-index: 0;
+
+  @media screen and (min-width: 768px) {
+    background-color: #fdfdfd;
+  }
 }
 
 .reviews__quotes::before {
@@ -43,6 +53,10 @@
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: 768px) {
+    width: 460px;
+  }
 }
 
 .reviews__gradient {
@@ -53,6 +67,17 @@
   width: 50%;
   height: 70%;
   background-image: repeating-linear-gradient(#e1e1e1 1px, transparent 3px, transparent 31px);
+
+  @media screen and (min-width: 768px) {
+    width: 544px;
+    height: 61px;
+    background-image: repeating-linear-gradient(
+      #e1e1e1 1px,
+      transparent 2.5px,
+      transparent 30.24px
+    );
+    top: 63%;
+  }
 }
 
 .reviews__person--info {
@@ -113,7 +138,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding-right: 30px;
+  // padding-right: 30px;
   margin-right: 0 !important;
 }
 .swiper-slide:last-child {
