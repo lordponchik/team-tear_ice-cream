@@ -92,6 +92,117 @@
     height: 525px;
   }
 
+}
+
+.products__list--pink {
+  background: $accent-pink-color;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 3px 3px #ffb8ca, 0px 4px 4px #ffb8ca, 1px 4px 6px #ffb8ca;
+  }
+  position: relative;
+  &::before {
+    display: none;
+    color: transparent;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: -110px;
+    left: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: display 5000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  &:hover::before {
+    display: block;
+  }
+}
+
+.products__list--peach {
+  background: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 3px 3px #f0d1a5, 0px 4px 4px #f0d1a5, 1px 4px 6px #f0d1a5;
+  }
+  position: relative;
+  &::before {
+    color: transparent;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-color: #f0d1a5;
+    transform-origin: left bottom;
+    transition: transform 5000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  &:hover::before {
+    transform: scaleY(0.7);
+  }
+}
+
+.products__list--mint {
+  background: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 3px 3px #c2e297, 0px 4px 4px #c2e297, 1px 4px 6px #c2e297;
+  }
+  position: relative;
+  &::before {
+    color: transparent;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-color: #c2e297;
+    transform-origin: left bottom;
+    transition: transform 5000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  &:hover::before {
+    transform: scaleY(0.7);
+  }
+}
+
+.products__list:not(:last-child) {
+  margin-bottom: 130px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 29px;
+  }
+}
+
+.products__name {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+
   &--ice-cream::before {
     content: '';
     width: 249px;
