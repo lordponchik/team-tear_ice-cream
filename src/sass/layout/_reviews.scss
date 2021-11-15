@@ -13,14 +13,21 @@
 }
 
 .reviews__quotes {
+  width: 280px;
   position: relative;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   padding: 44px 50px 25px;
   background-color: #fafafa;
   z-index: 0;
 
   @media screen and (min-width: 768px) {
     background-color: #fdfdfd;
+    width: 620px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-color: #fdfdfd;
+    width: 926px;
   }
 }
 
@@ -56,6 +63,24 @@
 
   @media screen and (min-width: 768px) {
     width: 460px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
   }
 }
 
@@ -77,6 +102,13 @@
       transparent 30.24px
     );
     top: 63%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 822px;
+    height: 31px;
+    background-image: repeating-linear-gradient(#e1e1e1 1px, transparent 2.5px, transparent 30px);
+    top: 67%;
   }
 }
 
