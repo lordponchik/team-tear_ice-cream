@@ -24,7 +24,7 @@
     background-image: url(../images/about/desktop/bg-about-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 88%;
+    background-position-y: 110%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/desktop/bg-about-desktop@2x.png);
@@ -52,7 +52,6 @@
   }
 }
 .about__title {
-  margin-bottom: 26px;
   font-family: Titan One;
   font-size: 34px;
   line-height: 1.1;
@@ -63,23 +62,57 @@
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    margin-bottom: 50px;
   }
-
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     letter-spacing: 0.06em;
   }
-}
-.about__container {
-  @media screen and (min-width: 768px) {
-    display: flex;
+
+  &::after {
+    content: '';
+    width: 280px;
+    height: 279px;
+    background-image: url(../images/about/mob/about-cow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/tab/about-cow-tab@2x.png);
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin: 26px auto 46px;
+    }
+    @media screen and (min-width: 768px) {
+      float: left;
+      margin-right: 17px;
+      margin-top: 50px;
+      width: 340px;
+      height: 339px;
+      background-image: url(../images/about/tab/about-cow-tab.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/about/tab/about-cow-tab@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 74px;
+      width: 516px;
+      height: 516px;
+      background-image: url(../images/about/desktop/about-cow-desktop.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/about/desktop/about-cow-desktop@2x.png);
+      }
+    }
   }
 }
-.about__img {
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    margin-bottom: 46px;
+.about__container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
   }
 }
 .about__description {
@@ -87,13 +120,12 @@
 
   @media screen and (min-width: 768px) {
     padding: 0;
-    margin-left: 17px;
-    width: 340px;
+    margin-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 74px;
-    width: 463px;
+    //
+    min-height: 465px;
   }
 }
 .about__text {
@@ -105,7 +137,6 @@
     font-size: 14px;
     line-height: 1.8;
   }
-
   @media screen and (min-width: 1280px) {
     letter-spacing: 0.04em;
   }
@@ -125,7 +156,6 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
-
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.9;
@@ -144,7 +174,6 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 62px;
   }
-
   @media screen and (min-width: 1280px) {
     margin-bottom: 45px;
   }
@@ -160,6 +189,9 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
+  @media screen and (min-width: 1280px) {
+  }
+
 }
 .about__btn-text {
   margin-top: -3px;
