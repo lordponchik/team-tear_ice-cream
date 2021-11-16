@@ -247,6 +247,27 @@
   @media screen and (min-width: 1280px) {
     width: 188px;
     height: 191px;
+    animation-name: test1;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+    @keyframes test1 {
+      0% {
+        transform: translateY(100%);
+      }
+      33% {
+        transform: translateY(0%);
+        // transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+      }
+      66% {
+        transform: translateY(5%);
+        transition-timing-function: ease;
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
   }
 }
 
@@ -382,18 +403,33 @@
 
 .hero-girl {
   display: none;
+  animation-name: test;
+  // transition-property: transform;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
     top: 266px;
     right: 34px;
   }
+
   @media screen and (min-width: 1280px) {
     top: 423px;
     right: 109px;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+    @keyframes test {
+      0% {
+        transform: rotatex(90deg);
+      }
+      100% {
+        transform: rotatex(0deg);
+      }
+    }
+    // transform: scale(1);
+    // transition-duration: 2500ms;
   }
 }
-
 .hero-girl__image {
   width: 168px;
   height: 133px;
