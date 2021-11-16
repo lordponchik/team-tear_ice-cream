@@ -1,17 +1,32 @@
 .reviews {
   padding-top: 80px;
-  margin-bottom: 86px;
+  padding-bottom: 86px;
 }
+.reviews .container {
+  @media screen and (min-width: 768px) {
+    padding: 0 74px;
+  }
+}
+
 .reviews__image {
   margin: 0 auto 29px;
 }
 
 .reviews__quotes {
+  width: 280px;
   position: relative;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   padding: 44px 50px 25px;
   background-color: #fafafa;
   z-index: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 926px;
+  }
 }
 
 .reviews__quotes::before {
@@ -25,8 +40,10 @@
   width: 54px;
   height: 40px;
   z-index: -1;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/reviews/quotes@2x.png);
+  }
 }
-
 .reviews__text {
   display: block;
   width: 157px;
@@ -41,6 +58,28 @@
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: 768px) {
+    width: 460px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+  }
 }
 
 .reviews__gradient {
@@ -51,6 +90,24 @@
   width: 50%;
   height: 70%;
   background-image: repeating-linear-gradient(#e1e1e1 1px, transparent 3px, transparent 31px);
+
+  @media screen and (min-width: 768px) {
+    width: 544px;
+    height: 61px;
+    background-image: repeating-linear-gradient(
+      #e1e1e1 1px,
+      transparent 2.5px,
+      transparent 30.24px
+    );
+    top: 63%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 822px;
+    height: 31px;
+    background-image: repeating-linear-gradient(#e1e1e1 1px, transparent 2.5px, transparent 30px);
+    top: 67%;
+  }
 }
 
 .reviews__person--info {

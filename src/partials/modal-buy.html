@@ -1,38 +1,94 @@
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <form class="modal-form">
+  <div class="modal">
+    <form class="modal-form">
+      <p class="modal-form__title">ICECREAM</p>
+      <div class="modal-form__container">
 
-            <p class="modal-form__title">ICECREAM</p>
-        <div class="modal-form__container">
-            
-            <label class="modal-label">Name
-                <input class="modal-label__input" type="text">
-            </label>
-            
-            <label class="modal-label">Phone
-                <input class="modal-label__input" type="tel">
-            </label>
-            
-            <label class="modal-label">Email
-                <input class="modal-label__input" type="email">
-            </label>
-            
-            <label class="modal-label">
-                <textarea class="modal-label__text"  rows="10"></textarea>
-            </label>
-        </div>
+        <label class="modal-label"
+          >Name
+          <input class="modal-label__input" type="text" />
+          <svg class="modal-label__icon" width="18" height="18">
+            <use href="/images/modal-buy.svg#icon-person-black"></use>
+          </svg>
+        </label>
 
-            <label class="modal-check">
-            <input class="modal-check__input visually-hidden" type="checkbox">
-            <span>
-            </span>
-            I agree to the newsletter and accept <a href="" class="modal-check__terms">Terms of an agreement</a>           
-            </label>
+        <label class="modal-label"
+          >Phone
+          <input class="modal-label__input" type="tel" />
+          <svg class="modal-label__icon" width="18" height="18">
+            <use href="/images/modal-buy.svg#icon-phone-black"></use>
+          </svg>
+        </label>
+
+        <label class="modal-label"
+          >Email
+          <input class="modal-label__input" type="email" />
+          <svg class="modal-label__icon" width="18" height="18">
+            <use href="/images/modal-buy.svg#icon-email-black" width="18" height="18"></use>
+          </svg>
+        </label>
+
         
-            <button  class="button modal-button ">Отправить</button>
-      </form>
-      <button class="modal-close button--white" data-modal-close>
-        X
-      </button>
-    </div>
+        <div>
+          <label class="modal-label-check">
+            <input class="modal-check__input visually-hidden" type="checkbox" />
+            ice cream
+            <span> </span> many
+            <input
+              class="modal-number"
+              type="number"
+              name="height"
+              min="0"
+              max="200"
+              step="1"
+              value="0"
+            />
+          </label>
+
+          <label class="modal-label-check">
+            <input class="modal-check__input visually-hidden" type="checkbox" id="coffee" />
+            ice coffee
+            <span> </span>
+            many
+            <input
+              class="modal-number"
+              type="number"
+              name="height"
+              id="coffee"
+              min="0"
+              max="200"
+              step="1"
+              value="0"
+            />
+          </label>
+
+          <label class="modal-label-check">
+            <input class="modal-check__input visually-hidden" type="checkbox" />
+            milkshakes
+            <span> </span>
+            many
+            <input
+              class="modal-number"
+              type="number"
+              name="height"
+              min="0"
+              max="200"
+              step="1"
+              value="0"
+            />
+          </label>
+        </div>
+      </div>
+
+      <label class="modal-check">
+        <input class="modal-check__input visually-hidden" type="checkbox" />
+        <span> </span>
+        I agree to the newsletter and accept
+        <a href="" class="modal-check__terms">Terms of an agreement</a>
+      </label>
+
+      <button class="button modal-button">To order</button>
+    </form>
+    <button class="modal-close button--white" data-modal-close>X</button>
   </div>
+</div>

@@ -1,13 +1,11 @@
 .hero {
-  background-color: $accent-pink-color;
   width: 100%;
+  height: 502px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-
-  @media screen and (min-width: 320px) {
-    height: 502px;
-  }
+  background-color: $accent-pink-color;
+  height: 502px;
 
   @media screen and (min-width: 768px) {
     height: 399px;
@@ -23,19 +21,20 @@
 }
 
 .hero__title {
+  margin-bottom: 19px;
+  width: 218px;
   font-family: Titan One;
-  font-weight: normal;
-  letter-spacing: 0.04;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $white-color;
-
-  @media screen and (min-width: 320px) {
-    font-size: 26px;
-    line-height: 1.16;
-    text-shadow: none;
-    width: 218px;
-    margin-bottom: 19px;
-  }
+  font-size: 26px;
+  line-height: 1.16;
+  text-shadow: none;
+  width: 218px;
+  margin-bottom: 19px;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
@@ -50,35 +49,20 @@
     width: 277px;
     margin-bottom: 25px;
   }
-
-  .hero__title--accent {
-    line-height: 0.91;
-    color: $accent-color;
-
-    @media screen and (min-width: 768px) {
-      font-size: 34px;
-      line-height: 0.91;
-    }
-    @media screen and (min-width: 1280px) {
-      font-size: 58px;
-      line-height: 0.91;
-    }
-  }
 }
 
 .hero__title--accent {
   line-height: 0.91;
   color: $accent-color;
-
-  @media screen and (min-width: 320px) {
-    font-size: 40px;
-  }
+  font-size: 48px;
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
+    line-height: 0.91;
   }
   @media screen and (min-width: 1280px) {
     font-size: 58px;
+    line-height: 0.91;
   }
 }
 
@@ -87,34 +71,36 @@
   position: absolute;
   border-radius: 50%;
   z-index: 0;
+  width: 344px;
+  height: 346px;
+  top: 83px;
 
-  @media screen and (min-width: 320px) {
-    top: 83px;
-    right: -62;
-    width: 344px;
-    height: 346px;
+  @media screen and (max-width: 417px) {
+    left: 36px;
+  }
+  @media screen and (min-width: 418px) {
+    right: 36px;
   }
 
   @media screen and (min-width: 768px) {
     top: 31px;
-    right: 137px;
+    right: 143px;
     width: 324px;
     height: 322px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 42px;
-    right: 267px;
+    top: 52px;
+    right: 221px;
     width: 538px;
     height: 538px;
   }
 }
 
 .hero-image__item {
-  @media screen and (min-width: 320px) {
-    width: 170px;
-    height: 410px;
-  }
+  width: 170px;
+  height: 410px;
+
   @media screen and (min-width: 768px) {
     height: 336px;
     width: 143px;
@@ -148,10 +134,9 @@
 
 .hero__content {
   position: absolute;
-  @media screen and (min-width: 320px) {
-    left: 20px;
-    top: 193px;
-  }
+  left: 20px;
+  top: 137px;
+
   @media screen and (min-width: 768px) {
     top: 102px;
     left: 34px;
@@ -342,7 +327,7 @@
   }
 }
 
-.hero-counter__first {
+.hero-counter-child:not(:last-child) {
   margin-bottom: 15px;
 }
 
@@ -352,7 +337,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   display: flex;
   justify-content: right;
