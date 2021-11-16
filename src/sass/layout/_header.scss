@@ -1,7 +1,6 @@
 .page-header {
   position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 999;
   width: 100%;
   padding-top: 6px;
 
@@ -54,12 +53,11 @@
 }
 
 .button__burger {
-  padding-left: 0px;
-  padding-right: 0px;
-  vertical-align: middle;
+  border: 0;
   margin-left: auto;
   background: transparent;
   stroke: $accent-color;
+  cursor: pointer;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
