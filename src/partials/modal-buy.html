@@ -34,15 +34,19 @@
             <input class="modal-check__input visually-hidden" type="checkbox" />
            <p class="modal-check__text">ice cream</p> 
             <span> </span> many
-            <input
-              class="modal-number"
-              type="number"
-              name="height"
-              min="0"
-              max="200"
-              step="1"
-              value="0"
-            />
+            <div class="number">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input
+                class="modal-number" 
+                type="number"
+                name="height"
+                min="0"
+                max="200"
+                step="1"
+                value="0"
+              />
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
           </label>
 
           <label class="modal-label-check">
@@ -51,32 +55,38 @@
             <span> 
             </span>
             many
-            <input
-              class="modal-number"
-              type="number"
-              name="height"
-              id="coffee"
-              min="0"
-              max="200"
-              step="1"
-              value="0"
-            />
+            <div class="number">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input
+                class="modal-number" 
+                type="number"
+                name="height"
+                min="0"
+                max="200"
+                step="1"
+                value="0"
+              />
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
           </label>
-
           <label class="modal-label-check">
             <input class="modal-check__input visually-hidden" type="checkbox" />
             <p class="modal-check__text">milkshakes</p>
             <span> </span>
             many
-            <input
-              class="modal-number"
-              type="number"
-              name="height"
-              min="0"
-              max="200"
-              step="1"
-              value="0"
-            />
+            <div class="number">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input
+                class="modal-number" 
+                type="number"
+                name="height"
+                min="0"
+                max="200"
+                step="1"
+                value="0"
+              />
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+          </div>
           </label>
         </div>
       </div>
@@ -87,6 +97,7 @@
         I agree to the newsletter and accept
         <a href="" class="modal-check__terms">Terms of an agreement</a>
       </label>
+      
 
       <button class="button modal-button">To order</button>
     </form>
