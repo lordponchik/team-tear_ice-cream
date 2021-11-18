@@ -1,6 +1,6 @@
 .modal-location {
   position: relative;
-  width: 680px;
+  width: 90%;
   min-height: 590px;
   border-radius: 10px;
   background-color: $img-bg-color;
@@ -34,8 +34,11 @@
   display: flex;
   position: absolute;
   top: 2%;
-  left: 95%;
+  right: 2%;
   border-radius: 100%;
   border: 1px solid $accent-color;
   cursor: pointer;
+}
+iframe {
+  width: 100%;
 }
