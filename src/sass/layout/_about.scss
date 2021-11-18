@@ -39,7 +39,7 @@
   text-align: center;
   text-transform: uppercase;
   //   цвета нет
-  color: #ffa5ba;
+  color: $img-bg-color;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -191,7 +191,6 @@
   }
   @media screen and (min-width: 1280px) {
   }
-
 }
 .about__btn-text {
   margin-top: -3px;

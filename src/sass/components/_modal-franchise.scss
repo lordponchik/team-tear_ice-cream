@@ -4,7 +4,7 @@
   min-height: 590px;
   border-radius: 10px;
 
-  background-color: #fff5f6;
+  background-color: $bg-color;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 767px) {
@@ -23,8 +23,8 @@
   &__title {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #d41443;
-    background-color: #ffa5ba;
+    color: $accent-color;
+    background-color: $img-bg-color;
     border-radius: 20px;
     font-family: Titan One;
     line-height: 1.13;
@@ -44,7 +44,8 @@
   top: 4%;
   left: 89%;
   border-radius: 100%;
-  border: 1px solid #d41443;
+  border: 1px solid $accent-color;
+  cursor: pointer;
 }
 .modal-frn-button {
   font-family: Titan One;
@@ -58,14 +59,14 @@
   width: 75%;
   max-height: 50px;
   height: 15%;
-  color: #ffffff;
-  background-color: #ffb8ca;
+  color: $white-color;
+  background-color: $accent-pink-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #d41443;
-    background-color: #ffa5ba;
+    color: $accent-color;
+    background-color: $img-bg-color;
   }
 }
 .modal-frn-label {
@@ -78,7 +79,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: #d41443;
+  color: $accent-color;
 
   &:last-child {
     margin-bottom: 0;
@@ -91,7 +92,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: #d41443;
+    color: $accent-color;
   }
   .modal-frn-label__input::placeholder,
   .modal-frn-label__text::placeholder {
@@ -101,7 +102,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: #ffb8ca;
+    color: $accent-pink-color;
   }
   &__input {
     display: block;
@@ -115,7 +116,7 @@
     cursor: pointer;
     outline: none;
     box-sizing: border-box;
-    border: 1px solid #ffa5ba;
+    border: 1px solid $img-bg-color;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -132,13 +133,13 @@
 
     cursor: pointer;
     box-sizing: border-box;
-    border: 1px solid #ffa5ba;
+    border: 1px solid $img-bg-color;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__input:hover,
   &__text:hover,
   &__text:focus {
-    border-color: #d41443;
+    border-color: $accent-color;
   }
 }
 .modal-frn-check {
@@ -151,15 +152,15 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
-  color: #ad6577;
+  color: $secondary-text-color;
   &:focus span,
   &:hover span {
-    border-color: #c2e297;
+    border-color: $accent-mint-color;
   }
   & span {
     min-width: 15px;
     min-height: 15px;
-    border: 2px solid #ffa5ba;
+    border: 2px solid $img-bg-color;
     border-radius: 3px;
     margin-right: 7px;
 
@@ -168,17 +169,12 @@
     justify-content: center;
     &:hover,
     &:focus {
-      border-color: #c2e297;
+      border-color: $accent-mint-color;
     }
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
   }
 
   &__input:checked + span {
-    background-color: #ffa5ba;
+    background-color: $img-bg-color;
     border: none;
   }
   &__terms {
@@ -197,5 +193,5 @@
   padding-bottom: 30px;
 }
 .modal-frn-check__terms {
-  color: #c2e297;
+  color: $accent-mint-color;
 }

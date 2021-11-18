@@ -53,7 +53,7 @@
 
   &__item {
     padding: 43px 20px;
-    background: #ffffff;
+    background: $white-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -154,8 +154,8 @@
 
   &__days {
     padding: 25px 0;
-    border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid $bg-hover-color-btn;
+    border-bottom: 1px solid $bg-hover-color-btn;
 
     @media screen and (min-width: 768px) {
       padding: 30px 0;
@@ -186,7 +186,7 @@
     font-size: 12px;
     line-height: 1.86;
     font-weight: 500px;
-    color: #ffa5ba;
+    color: $img-bg-color;
 
     @media screen and (min-width: 768px) {
       font-size: 14px;

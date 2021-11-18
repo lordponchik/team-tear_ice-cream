@@ -3,7 +3,7 @@
   width: 680px;
   min-height: 590px;
   border-radius: 10px;
-  background-color: #ffb8ca;
+  background-color: $img-bg-color;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-location-form {
@@ -15,8 +15,8 @@
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #d41443;
-    background-color: #ffa5ba;
+    color: $accent-color;
+    background-color: $img-bg-color;
     border-radius: 20px;
     font-family: Titan One;
     line-height: 1.13;
@@ -36,5 +36,6 @@
   top: 2%;
   left: 95%;
   border-radius: 100%;
-  border: 1px solid #d41443;
+  border: 1px solid $accent-color;
+  cursor: pointer;
 }

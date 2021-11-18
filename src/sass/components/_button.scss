@@ -14,7 +14,7 @@
 
   &:hover,
   &:focus {
-    background-color: #c7133e;
+    background-color: $bg-color-btn;
   }
 }
 
@@ -25,6 +25,6 @@
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $bg-hover-color-btn;
   }
 }

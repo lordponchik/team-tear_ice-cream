@@ -57,11 +57,10 @@
   }
 }
 .page-nav__link--current {
-  color: #d41443;
+  color: $accent-color;
 }
 
 .button__burger {
-
   border: 0;
   margin-left: auto;
   background: transparent;

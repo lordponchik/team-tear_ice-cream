@@ -14,7 +14,6 @@
     visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   overflow-y: scroll;
-  
 }
 .backdrop.is-hidden {
   visibility: none;
@@ -39,11 +38,6 @@
   }
 }
 .modal-form {
-  position: absolute;
-  width: 85%;
-  height: 100%;
-  padding: 15px;
-
   &__title {
     color: $accent-color;
     font-family: Titan One;
@@ -57,7 +51,6 @@
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    
   }
 }
 .modal-close {
@@ -105,28 +98,28 @@
     border-radius: 8px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-    &__input:hover,
-    &__text:hover,
-    &__text:focus {
-      border-color: $accent-mint-color $accent-mint-color;
-    }
+  &__input:hover,
+  &__text:hover,
+  &__text:focus {
+    border-color: $accent-mint-color $accent-mint-color;
+  }
 
-    &:hover > .modal-label__icon {
-      fill: $accent-mint-color;
-    }
+  &:hover > .modal-label__icon {
+    fill: $accent-mint-color;
+  }
 
-.modal-label__icon {
+  .modal-label__icon {
     position: absolute;
     top: 67%;
     left: 10px;
     height: 18px;
     width: 18px;
-  
+
     transform: translateY(-50%);
     fill: $accent-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-} 
+}
 .modal-check {
   position: relative;
   display: flex;
@@ -143,10 +136,10 @@
 
   & span {
     &:hover,
-    &:focus{
+    &:focus {
       border: 1px solid $accent-mint-color;
     }
-    width: 15px;
+    min-width: 15px;
     height: 15px;
     border: 1px solid$accent-color;
     border-radius: 3px;
@@ -168,7 +161,7 @@
     background-size: contain;
     border: none;
   }
-    
+
   &__terms {
     margin-left: 4px;
     text-decoration-line: underline;
@@ -179,22 +172,21 @@
   }
 }
 
-
-.modal-check__text{
+.modal-check__text {
   margin-right: 15px;
 }
 .modal-number {
   color: $accent-color;
-    height: 25px;
-    width: 50px;
-    border-radius: 25px;
-    border-color: $img-bg-color;
-    margin-left: 25px;
-    outline: none;
-    text-align: center;
-    border: none;
-    /* background-color: inherit; */
-    font-size: 18px;
+  height: 25px;
+  width: 50px;
+  border-radius: 25px;
+  border-color: $img-bg-color;
+  margin-left: 25px;
+  outline: none;
+  text-align: center;
+  border: none;
+  /* background-color: inherit; */
+  font-size: 18px;
 }
 
 .modal-number:hover,
@@ -232,7 +224,7 @@
   color: $accent-color;
   & span {
     &:hover,
-    &:focus{
+    &:focus {
       border: 1px solid $accent-mint-color;
     }
     width: 15px;
@@ -249,67 +241,63 @@
   }
 }
 
-
-
 .number {
-	display: inline-block;
-	position: relative;
-	width: 100px;
+  display: inline-block;
+  position: relative;
+  width: 100px;
 }
-.number input[type="number"] {
-	display: block;
-    height: 32px;
-    line-height: 32px;
-    width: 50%;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
+.number input[type='number'] {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  width: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
-.number input[type="number"]::-webkit-outer-spin-button,
-.number input[type="number"]::-webkit-inner-spin-button {
-	display: none;
+.number input[type='number']::-webkit-outer-spin-button,
+.number input[type='number']::-webkit-inner-spin-button {
+  display: none;
 }
-.number-minus{
+.number-minus {
   &:hover,
-    &:focus {
-      color: $accent-mint-color;
-    }
-    position: absolute;
-    display: block;
-    text-align: center;
-    top: 1px;
-    left: 1px;
-    bottom: 1px;
-    width: 20px;
-    padding: 0;
-    font-size: 25px;
-    font-weight: 600;
-    margin-left: 2px;
-    border: none;
-    background-color: inherit;
-    color: $white-color;
-    cursor: pointer;  
-
+  &:focus {
+    color: $accent-mint-color;
+  }
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 2px;
+  border: none;
+  background-color: inherit;
+  color: $white-color;
+  cursor: pointer;
 }
-
 
 .number-plus {
-	position: absolute;
-    top: 1px;
-    right: 1px;
-    bottom: 1px;
-    width: 20px;
-    padding: 0;
-    display: block;
-    text-align: center;
-    border: none;
-    font-size: 25px;
-    font-weight: 600;
-    background-color: inherit;
-    color: $white-color;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-      color: $accent-mint-color;
-    }
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: inherit;
+  color: $white-color;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $accent-mint-color;
+  }
 }
