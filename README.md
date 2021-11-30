@@ -1,3 +1,59 @@
+# Команда разработчиков
+
+## https://github.com/lordponchik
+
+- **Team Lead**
+- Slider
+- Mobile menu
+- Gallery
+
+## https://github.com/dasha-musienko
+
+- **Scrum Master**
+- секция Reviews
+
+## https://github.com/6e3veR6k
+
+- Header
+
+## https://github.com/dashabondarenko07
+
+- сборка изображений
+- секция About
+
+## https://github.com/akoval25
+
+- секция Products
+- шрифты
+
+## https://github.com/Yuliia-Rozhnova
+
+- Footer
+
+## https://github.com/Vasylij-Kashtalyan
+
+- модальное окно Buy Now
+
+## https://github.com/Anton-2206
+
+- секция Hero + анимация
+- анимация секции Products
+- модальное окно Francgise
+- модальное окно Our Locations
+
+## https://github.com/Anton-Vin
+
+- секция Contacts
+
+## https://github.com/Kostiantyn-Derevianko
+
+- секция Advantages
+- модальное окно Read More
+
+## https://github.com/horislavetspasha
+
+- секция Hero
+
 # Parcel boilerplate
 
 ## Скрытые файлы
