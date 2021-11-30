@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://lordponchik.github.io/team-tear",
+  "homepage": "https://lordponchik.github.io/team-tear_ice-cream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-tear/"
+    "build": "parcel build src/*.html --public-url /team-tear_ice-cream/"
   },
   "repository": {
     "type": "git",
