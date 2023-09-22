@@ -1,114 +1,65 @@
+[Figma layout](https://www.figma.com/file/ItEDbn8bZ6c1BWMtTNFOHV/IceCream?type=design&node-id=5-238&mode=design&t=jbrGPKtLjzK5G0SS-0)
+
 # Команда разработчиков
 
-## https://github.com/lordponchik
+[lordponchik](https://github.com/lordponchik) / **Team Lead**
 
-- **Team Lead**
 - Slider
 - Mobile menu
 - Gallery
 
-## https://github.com/dasha-musienko
+[dasha-musienko
+](https://github.com/dasha-musienko) / **Scrum Master**
 
-- **Scrum Master**
-- секция Reviews
+- section Reviews
 
-## https://github.com/6e3veR6k
+[6e3veR6k
+](https://github.com/6e3veR6k)
 
 - Header
 
-## https://github.com/dashabondarenko07
+[dashabondarenko07
+](https://github.com/dashabondarenko07)
 
-- сборка изображений
-- секция About
+- image assembly
+- section About
 
-## https://github.com/akoval25
+[akoval25
+](https://github.com/akoval25)
 
-- секция Products
-- шрифты
+- section Products
+- fonts
 
-## https://github.com/Yuliia-Rozhnova
+[Yuliia-Rozhnova
+](https://github.com/Yuliia-Rozhnova)
 
 - Footer
 
-## https://github.com/Vasylij-Kashtalyan
+[Vasylij-Kashtalyan
+](https://github.com/Vasylij-Kashtalyan)
 
-- модальное окно Buy Now
+- modal window Buy Now
 
-## https://github.com/Anton-2206
+[Anton-2206
+](https://github.com/Anton-2206)
 
-- секция Hero + анимация
-- анимация секции Products
-- модальное окно Francgise
-- модальное окно Our Locations
+- section Hero + animation
+- section animation Products
+- modal window Francgise
+- modal window Our Locations
 
-## https://github.com/Anton-Vin
+[Anton-Vin
+](https://github.com/Anton-Vin)
 
-- секция Contacts
+- section Contacts
 
-## https://github.com/Kostiantyn-Derevianko
+[Kostiantyn-Derevianko
+](https://github.com/Kostiantyn-Derevianko)
 
-- секция Advantages
-- модальное окно Read More
+- section Advantages
+- modal window Read More
 
-## https://github.com/horislavetspasha
+[horislavetspasha
+](https://github.com/horislavetspasha)
 
-- секция Hero
-
-# Parcel boilerplate
-
-## Скрытые файлы
-
-Включите отображение скрытых файлов и папок в проводнике своей операционной системы, иначе вы не
-сможете выбрать и скопировать себе файлы настроек проекта, имена которых начинаются с точки.
-
-## Зависимости
-
-На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/) со всеми
-дополнительными инструментами кроме **Chocolatey** - его ставить не нужно.
-
-## Перед началом работы
-
-Один раз на проект установить все зависимости.
-
-```shell
-npm ci
-```
-
-### Разработка
-
-Запустить режим разработки.
-
-```shell
-npm run dev
-```
-
-Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
-
-### Деплой
-
-Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
-`gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
-пул-реквеста. Для этого необходимо в файле `package.json` отредактировать поле `homepage` и скрипт
-`build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
-
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
-},
-```
-
-На всякий случай стоит зайти в настройки репозитория `Settings` > `Pages` и убедиться что продакшен
-версии файлов раздаются из папки `/root` ветки `gh-pages`.
-
-Через какое-то время живую страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`, например
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-## Файлы и папки
-
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик просто копирует
-  используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
-  компьютерах это может занять много времени.
+- section Hero
