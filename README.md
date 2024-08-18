@@ -45,10 +45,10 @@ Each participant took on a separate part of the project, which helped us improve
 - **[dashabondarenko07 ](https://github.com/dashabondarenko07)**:  
 `- image collection;`  
 `- section "About us"`.
-- **[akial25 ](https://github.com/akival25)**:  
+- **[akial25 ](https://github.com/akoval25)**:  
 `- section "Products";`  
 `- fonts`.
-- **[Yuliia-Rozhnova ](https://github.com/Yuliia-Rzhnova)**:   
+- **[Yuliia-Rozhnova ](https://github.com/Yuliia-Rozhnova)**:   
 `- section "Footer"`.
 - **[Vasiliy-Kashtalyan ](https://github.com/Vasylij-Kashtalyan)**:  
 `- modal window "Buy now"`.
